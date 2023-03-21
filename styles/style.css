@@ -1,0 +1,354 @@
+@charset "UTF-8";
+
+:root {
+  --commonColor:#3339;
+  --grayColor:#aaa3;
+  --whiteColor:#fff;
+  --blurColor:#4441;
+  --bgColor:#111;
+}
+
+.dWrap {
+  width: 80%;
+  height: 100%;
+  margin: 0 auto;
+  padding: 3% 0 ;
+}
+
+.textCen {
+  text-align: center;
+}
+
+h2 {
+  font-size: 2rem;
+  text-align: center;
+  padding: 5% 0;
+}
+
+p {
+  text-align: center;
+}
+
+
+/*###################################################################################################################
+#####################################################################################################################
+################################################flex List############################################################
+#####################################################################################################################
+###################################################################################################################*/
+.flex {
+  display: flex;
+}
+
+.flexAllCen {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.flexCol {
+  flex-direction: column;
+}
+
+.jusCen {
+  justify-content: center;
+}
+
+.jusBw {
+  justify-content: space-between;
+}
+
+.alignCen {
+  align-items: center;
+}
+
+
+/*###################################################################################################################
+#####################################################################################################################
+################################################Common############################################################
+#####################################################################################################################
+###################################################################################################################*/
+body {
+  color: var(--whiteColor);
+}
+
+#wrapper {
+  position: relative;
+  background-color: var(--bgColor);
+}
+
+header {
+  background-color: var(--commonColor);
+  justify-content: space-between;
+  font-size: 1.25rem;
+  position: fixed;
+  width: 100%;
+  height: 3em;
+}
+
+header p {
+  display: flex;
+  padding: .5em;
+  width: 30%;
+}
+
+nav ul {
+  list-style: none;
+}
+
+nav ul li {
+  padding: 1em;
+}
+
+footer {
+  background-color: var(--commonColor);
+  padding: .5em;
+  position: absolute;
+  position: fixed;
+  bottom: 0;
+  width: 100%;
+}
+
+/*###################################################################################################################
+#####################################################################################################################
+################################################TOP##################################################################
+#####################################################################################################################
+###################################################################################################################*/
+
+
+.topPage {
+  background-image: url('../public/images/pc.jpg');
+  background-size: cover;
+  background-position: 50% 50%;
+  height: 100vh;
+  overflow: hidden;
+}
+
+h1 {
+  font-size: 2rem;
+  padding: 1em;
+}
+
+.topPage h2,.topPage p,.topPage a {
+  background-color: var(--blurColor);
+  font-size: 1.25rem;
+}
+
+.topProfile {
+  background-image: url('../public/images/pc5.jpg');
+  background-size: cover;
+  background-position: 40% 50%;
+  height: 100vh;
+  overflow: hidden;
+
+}
+
+.topSkill {
+  background-image: url('../public/images/bg20.jpg');
+  background-size: cover;
+  height: 100vh;
+
+}
+
+.topHistory {
+  background-image: url('../public/images/bg11.jpg');
+  background-size: cover;
+  height: 100vh;
+}
+
+.topProduct {
+  background-image: url('../public/images/bg24.jpg');
+  background-size: cover;
+  background-position: 80% 50%;
+  height: 100vh;
+
+}
+
+.topPrf p {
+  font-size: 4rem;
+}
+
+section a {
+  border: solid 1.5px var(--whiteColor);
+  padding: .25em;
+  background-color: var(--grayColor);
+}
+
+
+section a:hover {
+  background-color: #333;
+  transition: .5s;
+}
+
+/*###################################################################################################################
+#############################################             ###########################################################
+#############################################   Profile   ###########################################################
+#############################################             ###########################################################
+###################################################################################################################*/
+.profileWrap {
+  height: 100vh;
+}
+
+
+/*###################################################################################################################
+#############################################              ##########################################################
+#############################################     Skill    ##########################################################
+#############################################              ##########################################################
+###################################################################################################################*/
+
+
+
+
+.skillWrap dl > div {
+  width: 100%;
+  border-bottom: solid 1px var(--whiteColor);
+}
+
+.skillWrap dl div {
+  margin: 0 0 1em;
+}
+
+/* .skillWrap {
+  padding-bottom: 5%;
+} */
+
+.skillWrap div dt {
+  width: 20%;
+}
+
+/*###################################################################################################################
+#############################################             ###########################################################
+#############################################   History   ###########################################################
+#############################################             ###########################################################
+###################################################################################################################*/
+
+.historyWrap > div {
+  height: 15%;
+  margin: 0 0 1em;
+}
+
+.historyWrap dl {
+  width: 50%;
+}
+
+.historyWrap p {
+  width: 50%;
+  padding: 0 1em;
+  text-align: center;
+}
+
+.historyItems div:nth-of-type(odd) {
+  flex-direction: row-reverse;
+}
+
+.historyItems div dl {
+  border-bottom: 1px solid var(--whiteColor);
+  border-right: 1px solid var(--whiteColor);
+
+  padding: 1em;
+}
+
+.historyItems div p {
+  border-bottom: 1px solid var(--whiteColor);
+
+  padding: 1em;
+  width: 20%;
+}
+
+.historyItems div:nth-of-type(odd) dl {
+  border-right: none;
+  border-bottom: 1px solid var(--whiteColor);
+  border-left: 1px solid var(--whiteColor);
+}
+
+.historyItems div:last-of-type dl,
+.historyItems div:last-of-type p {
+  border-bottom: none;
+}
+
+/*###################################################################################################################
+#############################################             ###########################################################
+#############################################   Product   ###########################################################
+#############################################             ###########################################################
+###################################################################################################################*/
+
+.productWrap {
+  height: 100vh;
+}
+
+
+/*###################################################################################################################
+#############################################             ###########################################################
+#############################################   Hambuger  ###########################################################
+#############################################             ###########################################################
+###################################################################################################################*/
+
+/* Position and sizing of burger button */
+.bm-burger-button {
+  position: fixed;
+  color: var(--whiteColor);
+  width: 36px;
+  height: 30px;
+  right: 10px;
+  top: 10px;
+}
+
+/* Color/shape of burger icon bars */
+.bm-burger-bars {
+  background:var(--whiteColor);
+}
+
+/* Color/shape of burger icon bars on hover*/
+.bm-burger-bars-hover {
+  background: #005b99;
+}
+
+/* Position and sizing of clickable cross button */
+.bm-cross-button {
+  height: 30px;
+  width: 30px;
+}
+
+/* Color/shape of close button cross */
+.bm-cross {
+  background: #bdc3c7;
+}
+
+/*
+Sidebar wrapper styles
+Note: Beware of modifying this element as it can break the animations - you should not need to touch it in most cases
+*/
+.bm-menu-wrap {
+  position: fixed;
+  height: 100%;
+}
+
+/* General sidebar styles */
+.bm-menu {
+  background: var(--bgColor);
+  padding: 2.5em 1.5em 0;
+  font-size: 1.15em;
+}
+
+/* Morph shape necessary with bubble or elastic */
+.bm-morph-shape {
+  fill: #373a47;
+}
+
+/* Wrapper for item list */
+.bm-item-list {
+  color: var(--whiteColor);
+  padding: 0.8em;
+}
+
+/* Individual item */
+.bm-item {
+  display: inline-block;
+  text-decoration: none;
+  outline: none;
+}
+
+/* Styling of overlay */
+.bm-overlay {
+  background: rgba(0, 0, 0, 0.3);
+}

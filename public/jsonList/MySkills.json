@@ -1,0 +1,10 @@
+{
+  "mySkill": [
+  {"title":"HTML", "content01":"学習開始日： 2022/12", "content02":"Webページを作成する為に必要な知識やタグなど"},
+  {"title":"CSS", "content01":"学習開始日： 2022/12", "content02":"レイアウトの作成（flex,grid,positon）レスポンシブデザインの作成やなどのフレームワークの使用方法"},
+  {"title":"JavaScript", "content01":"学習開始日： 2023/01", "content02":"文法の書き方（If,Whileなど）じゃんけんアプリやFizzBuzzなど基礎的な応用"},
+  {"title":"jQuery", "content01":"学習開始日： 2023/01", "content02":"ハンバーガーメニューやスライダーなどの実装方法や書き方"},
+  {"title":"React", "content01":"学習開始日： 2023/02", "content02":"Classコンポーネントや関数コンポーネント、各種フックの使用方法"},
+  {"title":"Next.js", "content01":"学習開始日： 2023/03", "content02":"複数ページの作成や各種コンポーネントの管理方法、パスへの理解やライブラリを使用したWebページの作成方法"}
+  ]
+}
