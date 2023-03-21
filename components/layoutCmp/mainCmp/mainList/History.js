@@ -5,7 +5,7 @@ import { useEffect, useState } from 'react'
 
 export default function History(props) {
   //Webページ上からJsonデータを取得
-  const url = 'http://localhost:3000/jsonList/History.json'
+  const url = 'https://portfolio-nu-amber-42.vercel.app//jsonList/History.json'
   //データの初期化
   const [history,setHistory] = useState({myHistory:[]})
 

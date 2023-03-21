@@ -2,7 +2,7 @@
 import DlList from '@/components/layoutCmp/mainCmp/itemComponens/DlListItems'
 import { useEffect, useState } from 'react'
 export default function Skill(props) {
-  const url = 'http://localhost:3000/jsonList/MySkills.json'
+  const url = 'https://portfolio-nu-amber-42.vercel.app//jsonList/MySkills.json'
   const [skill,setSkill] = useState({mySkill:[]})
 
   useEffect (() => {
