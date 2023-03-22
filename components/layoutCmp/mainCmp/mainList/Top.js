@@ -6,7 +6,9 @@ export default function Top(props) {
     <div className="topWrap">
       <section className="topPage flexAllCen">
         <h1>Portfolio</h1>
-        <p>私の現在のスキルを可視化を目的としてポートフォリオを作成しました。<br />このWebページはReactとNext.jsを使用しています。<br />制作期間：30時間</p>
+        <p>私の現在のスキルを可視化を目的として<span>ポートフォリオを作成しました。</span></p>
+        <p>このWebページはReactとNext.jsを<span>使用しています。</span></p>
+        <p>制作期間：30時間</p>
       </section>
       {/* section & Link を作る物 */}
       <Si id="topProfile" className="topProfile flexAllCen" title="Profile"url="ProfilePage" />
