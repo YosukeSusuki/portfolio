@@ -241,9 +241,6 @@ section a:hover {
   margin: 0 0 1em;
 }
 
-/* .skillWrap {
-  padding-bottom: 5%;
-} */
 
 .skillWrap div dt {
   width: 20%;
@@ -341,12 +338,20 @@ section a:hover {
     margin: 1em;
   }
 
+  .skillWrap {
+    padding: 6em 0 0 ;
+  }
+
   .skillWrap dl div {
     flex-direction: column;
   }
 
   .skillWrap dl div dt {
     margin-bottom: .5em;
+  }
+
+  .historyWrap {
+    padding: 6em 0 0 ;
   }
 
   .historyItems div {
