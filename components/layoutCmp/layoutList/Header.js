@@ -13,7 +13,7 @@ export default function Header(props) {
         <a href='https://github.com/YosukeSusuki' target='brank'><FontAwesomeIcon icon={faGithub} /></a> 
         <p><FontAwesomeIcon icon={faPaperPlane} /></p>
       </div>
-      <p className="flex"><img src="/images/logo2.svg" alt="logo" /></p>
+      <p className="flex"><img src="/images/logo.svg" alt="logo" /></p>
       <nav>{props.change()}</nav>
     </header>
   )
