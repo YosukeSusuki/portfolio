@@ -1,6 +1,7 @@
 //Header コンポーネント
 //props.change　pages内の各ページから値を取得
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
+import "@fortawesome/fontawesome-svg-core/styles.css"
 import { faTwitter } from "@fortawesome/free-brands-svg-icons";
 import { faGithub } from "@fortawesome/free-brands-svg-icons";
 import { faPaperPlane } from "@fortawesome/free-solid-svg-icons";

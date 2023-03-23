@@ -2,6 +2,7 @@ import Head from 'next/head'
 import Header from './Header'
 import Footer from './Footer'
 import Main from './Main'
+import Link from 'next/link'
 
 
 //Head & body 要素の作成コンポーネント
@@ -13,7 +14,9 @@ export default function Layout(props) {
       <Head>
         <meta charset="UTF-8" />
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-        <title>{props.title}</title>
+        <meta name="description" content="ReactとNext.jsを使用して実装されたポートフォリオサイトです。" />
+        <link rel="icon" href="/images/favicon.ico" />
+        <title>Susuki Yosuke_Portfolio</title>
       </Head>
       <div id='wrapper'>
           <Header change={props.change} />
