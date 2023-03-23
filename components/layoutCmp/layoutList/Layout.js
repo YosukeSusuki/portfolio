@@ -14,8 +14,9 @@ export default function Layout(props) {
       <Head>
         <meta charset="UTF-8" />
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-        <meta name="description" content="ReactとNext.jsを使用して実装されたポートフォリオサイトです。" />
+        <link rel="apple-touch-icon" href="/images/favicon.ico" />
         <link rel="icon" href="/images/favicon.ico" />
+        <meta name="description" content="ReactとNext.jsを使用して実装されたポートフォリオサイトです。" />
         <title>Susuki Yosuke_Portfolio</title>
       </Head>
       <div id='wrapper'>
