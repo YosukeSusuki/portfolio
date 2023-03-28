@@ -105,7 +105,7 @@ header > div p {
   padding: 0 .1em;
 }
 
-header > p {
+header > a {
   display: flex;
   padding: .5em;
   width: 30%;

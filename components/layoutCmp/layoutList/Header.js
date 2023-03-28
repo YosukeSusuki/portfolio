@@ -6,6 +6,7 @@ import { faTwitter } from "@fortawesome/free-brands-svg-icons";
 import { faGithub } from "@fortawesome/free-brands-svg-icons";
 import { faPaperPlane } from "@fortawesome/free-solid-svg-icons";
 import Image from 'next/image';
+import Link from 'next/link';
 
 export default function Header(props) {
   return (
@@ -15,7 +16,7 @@ export default function Header(props) {
         <a href='https://github.com/YosukeSusuki' target='brank'><FontAwesomeIcon icon={faGithub} /></a> 
         <p><FontAwesomeIcon icon={faPaperPlane} /></p>
       </div>
-      <p className="flex"><Image src="/images/logo.svg" alt="logo" width={90} height={65} /></p>
+      <Link className="flex jusCen" href="/"><Image src="/images/logo.svg" alt="logo" width={90} height={65} /></Link>
       <nav>{props.change()}</nav>
     </header>
   )
