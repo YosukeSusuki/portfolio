@@ -273,8 +273,6 @@ section a:hover {
 
 .historyItems div dl {
   border-bottom: 1px solid var(--whiteColor);
-  border-right: 1px solid var(--whiteColor);
-
   padding: 1em;
 }
 
@@ -285,7 +283,8 @@ section a:hover {
   width: 20%;
 }
 
-.historyItems div:nth-of-type(odd) dl {
+.historyItems div:nth-of-type(odd) dl,
+.historyItems div:nth-of-type(even) p {
   border-right: none;
   border-bottom: 1px solid var(--whiteColor);
   border-left: 1px solid var(--whiteColor);

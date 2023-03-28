@@ -11,10 +11,10 @@ export default function History(props) {
 
 
   useEffect (() => {
-  fetch(url)
-  .then( res => res.json())
-  .then( res => setHistory(res))
-})
+    fetch(url)
+    .then( res => res.json())
+    .then( res => setHistory(res))
+  },[])
 
   return (
     <section className='historyWrap dWrap'>
