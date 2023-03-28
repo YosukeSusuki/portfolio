@@ -5,6 +5,7 @@ import "@fortawesome/fontawesome-svg-core/styles.css"
 import { faTwitter } from "@fortawesome/free-brands-svg-icons";
 import { faGithub } from "@fortawesome/free-brands-svg-icons";
 import { faPaperPlane } from "@fortawesome/free-solid-svg-icons";
+import Image from 'next/image';
 
 export default function Header(props) {
   return (
@@ -14,7 +15,7 @@ export default function Header(props) {
         <a href='https://github.com/YosukeSusuki' target='brank'><FontAwesomeIcon icon={faGithub} /></a> 
         <p><FontAwesomeIcon icon={faPaperPlane} /></p>
       </div>
-      <p className="flex"><img src="/images/logo.svg" alt="logo" /></p>
+      <p className="flex"><Image src="/images/logo.svg" alt="logo" width={90} height={65} /></p>
       <nav>{props.change()}</nav>
     </header>
   )
