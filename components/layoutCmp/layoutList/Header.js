@@ -14,7 +14,7 @@ export default function Header(props) {
       <div className='flex alignCen'>
         <a href="https://twitter.com/s_yosuke1109" target="blank"><FontAwesomeIcon icon={faTwitter} /></a>
         <a href='https://github.com/YosukeSusuki' target='brank'><FontAwesomeIcon icon={faGithub} /></a> 
-        <p><FontAwesomeIcon icon={faPaperPlane} /></p>
+        <a href="mailto:hit2250.susuki.yosuke@gmail.com"><FontAwesomeIcon icon={faPaperPlane} /></a>
       </div>
       <Link className="flex jusCen" href="/"><Image src="/images/logo.svg" alt="logo" width={90} height={65} /></Link>
       <nav>{props.change()}</nav>
